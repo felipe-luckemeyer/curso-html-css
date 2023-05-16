@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos em HTML5</title>
+  </head>
+  <body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor.</p>
+
+    <video width="560" poster="imagens/capa-video.png" controls autoplay loop>
+      <source src="midia/meu-video.mp4" type="video/mp4" />
+      <source src="midia/meu-video.webm" type="video/webm" />
+      <p>Seu navegador nao tem compatibilidade com reproducao de videos</p>
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/f4k6xRfmz2A"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <h1>Inserindo video do Vimeo</h1>
+    <iframe
+      src="https://player.vimeo.com/video/257716930?h=2749de648b"
+      width="560"
+      height="360"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p>
+      <a href="https://vimeo.com/257716930"
+        >Le Futur Sera Chauve / The Bald Future</a
+      >
+      from <a href="https://vimeo.com/paulcabon">Paul Cabon</a> on
+      <a href="https://vimeo.com">Vimeo</a>.
+    </p>
+  </body>
+</html>
