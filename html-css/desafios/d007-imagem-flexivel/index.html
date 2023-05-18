@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagem flexivel</title>
+  </head>
+  <body>
+    <h1>Imagem Flexivel</h1>
+    <p>
+      Voce está vendo a imagem completa? Experimente ampliar o tamanho da sua
+      janela para aprovetar a melhor experiencia &#X1F92F;
+    </p>
+    <picture>
+      <source
+        media="(max-width:725px)"
+        srcset="imagens/foto-s.jpeg"
+        type="image/jpeg"
+      />
+      <source
+        media="(max-width:1025px)"
+        srcset="imagens/foto-m.jpeg"
+        type="image/jpeg"
+      />
+      <img
+        src="imagens/foto-g.jpeg"
+        alt="Montanhas com um caminho em madeira ao centro"
+      />
+    </picture>
+  </body>
+</html>
